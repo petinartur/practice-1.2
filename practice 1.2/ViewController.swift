@@ -30,17 +30,15 @@ class ViewController: UIViewController {
         redLight.alpha = 0.5
         yellowLight.alpha = 0.5
         greenLight.alpha = 0.5
-    }
-    
-    override func viewWillLayoutSubviews() {
+        
         redLight.layer.cornerRadius = redLight.frame.height / 2
         yellowLight.layer.cornerRadius = yellowLight.frame.height / 2
         greenLight.layer.cornerRadius = greenLight.frame.height / 2
     }
  
     @IBAction func startButtonPressed() {
-        if startButton.currentTitle == "Start" {
-        startButton.setTitle("Next", for: .normal)
+        if startButton.currentTitle == "START" {
+        startButton.setTitle("NEXT", for: .normal)
         }
         
         switch firstLight {
